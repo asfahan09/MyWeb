@@ -1,0 +1,1475 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "deMeAzX4VkNVv1DgQ",
+            });
+        })();
+    </script>
+    <style type="text/tailwindcss">
+    </style>
+    <style>
+        .splide__arrow {
+            -ms-flex-align: center;
+            align-items: center;
+            background: #ccc;
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            display: -ms-flexbox;
+            display: flex;
+            height: 2em;
+            -ms-flex-pack: center;
+            justify-content: center;
+            opacity: .7;
+            padding: 0;
+            position: absolute;
+            top: 32%;
+            transform: translateY(-50%);
+            width: 2em;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body class=" bg-black text-white ">
+    <main>
+        <!-- section 1  -->
+        <section>
+            <div class="relative w-full overflow-x-hidden">
+
+                <!--  Red Gradient Blur Background -->
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div class="w-[400px] h-[400px]
+                   bg-gradient-to-r from-red-900 via-red-700 to-red-500
+                   rounded-full blur-[200px] opacity-40">
+                    </div>
+                </div>
+                <div class=" w-full  bg-black dark:bg-gray-200">
+
+                    <nav class="fixed top-0 w-full px-4 z-50
+         flex items-center justify-between
+         bg-black/40 backdrop-blur-xl
+         border-b border-red-300/20
+         shadow-lg shadow-red-500/20
+         py-4 text-white">
+
+
+                        <div class="flex-shrink-0 ">
+                            <a href="#" class="text-2xl font-medium text-gray-700">
+                                <i
+                                    class="fa-solid fa-code  text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700"></i>
+                                <span class="px-1 text-white">Asfahan</span>
+
+                            </a>
+                        </div>
+                        <ul
+    class="hidden text-lg md:flex justify-end gap-8 py-2 cursor-pointer md:px-10 text-[16px] text-gray-400">
+
+    <li >
+        <a href="#aboutss" class="rounded-b hover:text-white duration-300">About</a>
+    </li>
+
+    <li class="rounded-b hover:text-white duration-300">
+        <a href="#serviceee">Service</a>
+    </li>
+
+    <li class="rounded-b hover:text-white duration-300">
+        <a href="#portfolioo">Portfolio</a>
+    </li>
+
+    <li class="rounded-b hover:text-white duration-300">
+        <a href="#testimoniall">Testimonial</a>
+    </li>
+
+    <li class="rounded-b hover:text-white duration-300">
+        <a href="#contactt">Contact</a>
+    </li>
+
+</ul>
+
+
+                        <div class="hidden md:flex justify-start pl-4 pr-2 py-1">
+                            <a href="#contactt"
+                                class="bg-[#b91202] text-white px-6 py-2 rounded-md relative overflow-hidden group">
+                                <span
+                                    class="absolute top-0 left-0 w-full h-full bg-white opacity-20 transform -skew-x-2 -translate-x-full group-hover:translate-x-0 transition duration-500"></span>
+                                <span class="relative z-10 font-medium text-white">Let's Talk</span>
+                            </a>
+                        </div>
+
+                        <!-- TOGGLE BUTTONS -->
+                        <button class="block md:hidden text-3xl pr-4" id="nav__toggle-open">
+                            <i class="uil uil-bars"></i>
+                        </button>
+                        <button class="hidden md:hidden text-3xl pr-4" id="nav__toggle-close">
+                            <i class="uil uil-multiply"></i>
+                        </button>
+
+                        <!-- Mobile NAv -->
+                        <ul id="mobile-nav"
+                            class="hidden md:hidden sm:w-full w-[98%] mx-auto absolute top-[4rem] left-0 right-0 w-full flex-col items-center gap-4 bg-black dark:bg-white rounded-b cursor-pointer shadow shadow-red-800">
+
+                            <li class="p-2 rounded hover:shadow hover:shadow-green-600" id="about"><a href="#aboutss"></a>About</li>
+                            <li class="p-2 rounded hover:shadow hover:shadow-green-600" id="service"><a href="#servicee">Service</a></li>
+                            <li class="p-2 rounded hover:shadow hover:shadow-green-600" id="portfolio"><a href="#portfolioo">Portfolio</a></li>
+                            <li class="p-2 rounded hover:shadow hover:shadow-green-600" id="testimonial"><a href="#testimoniall">Testimonial</a>
+                            </li>
+                            <li class="p-2 rounded hover:shadow hover:shadow-green-600" id="contact"><a href="#contactt">Contact</a></li>
+                            <li class="p-2 rounded hover:shadow hover:shadow-green-600">
+                                <button class="flex justify-start">
+                                    <a  href="#contactt"
+                                        class="bg-green-600 text-white px-6 py-2 rounded-md relative overflow-hidden group">
+                                        <span
+                                            class="absolute top-0 left-0 w-full h-full bg-[#b91202] group-hover:translate-x-0 transition duration-500"></span>
+                                        <span class="relative z-10 font-medium text-white">Let's Talk</span>
+                                    </a>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                    <!--  -->
+                    <div
+                        class="w-[90%] md:w-[88%] mx-auto flex gap-6 items-center text-white dark:text-black justify-between pb-10 mt-12 md:mt-24">
+                        <!-- Left  -->
+                        <div class="w-full flex text-center lg:text-start flex-col gap-6 py-10 md:py-0">
+                            <h1 class="xl:text-7xl lg:text-6xl md:text-5xl text-4xl font-bold">Hi There , I am <span
+                                    class="xl:text-7xl font-bold text-transparent lg:text-6xl md:text-5xl text-4xl  bg-clip-text bg-gradient-to-r from-red-800 via-red-500 to-red-300">Muhammad
+                                    Asfahan
+                                </span> </h1>
+
+
+                            <p class="sm:text-lg text-gray-400 text-md">Full Stack Developer crafting powerful backend
+                                systems and engaging frontend interfaces.
+                                Turning ideas into high-performance web solutions.</p>
+                            <div class="flex gap-2 lg:justify-start justify-center ">
+                                <!--  -->
+                                <a href="assets\Asfahan_resumee.pdf" target="_blank"
+                                    class="bg-[#b91202] text-white px-6 py-2 rounded-md relative overflow-hidden group shadow-[0_0_25px_3px_rgba(153,27,27,0.45)] transition-all duration-300">
+                                    <span
+                                        class="absolute top-0 left-0 w-full h-full bg-white/20 transform -skew-x-2 -translate-x-full group-hover:translate-x-0 transition duration-500">
+                                    </span>
+
+                                    <span class="relative z-10 font-medium text-white">Resume</span>
+                                </a>
+
+                                <!--  -->
+                                <a href="#portfolioo" class="relative bg-[#161616] text-white px-6 py-2 rounded-md
+   hover:shadow-[0_0_25px_0px_rgba(153,27,27,0.45)]
+         border border-transparent
+         transition-all duration-400
+         hover:border-red-800">
+
+                                    Portfolio
+                                </a>
+
+                            </div>
+
+                            <hr class="lg:w-100 ">
+
+                            <div class="flex items-center sm:gap-10 gap-6 ">
+                                <div class="flex flex-col gap-1">
+                                    <h4
+                                        class="text-xl sm:text-3xl font-bold bg-clip-text bg-gradient-to-r from-red-800 via-red-500 to-red-300 text-transparent">
+                                        2 <sup class="font-bold -ml-1"></sup>
+                                    </h4>
+                                    <p class="text-sm sm:text-base text-gray-500 dark:text-gray-800">Years Experience
+                                    </p>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h4
+                                        class="text-xl sm:text-3xl font-bold bg-clip-text bg-gradient-to-r from-red-800 via-red-500 to-red-300 text-transparent">
+                                        10+</h4>
+                                    <p class="text-sm sm:text-base text-gray-500 dark:text-gray-800">Projects Done
+                                    </p>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h4
+                                        class="text-xl sm:text-3xl font-bold bg-clip-text bg-gradient-to-r from-red-800 via-red-500 to-red-300 text-transparent">
+                                        8+</h4>
+                                    <p class="text-sm sm:text-base text-gray-500 dark:text-gray-800">Happy Clients
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="xl:w-1/2 w-full flex items-center justify-center hidden lg:block">
+                            <div
+                                class="relative  rounded-circle border border-none dark:border-gray-300 rounded-lg p-2 dark:bg-white">
+                                <img class="h-[80%] object-center rounded-lg object-cover"
+                                    src="assets/images/IMG-20250407-WA0039.png" alt="Portfolio Image" />
+                                <!-- 1 -->
+                                <div
+                                    class="absolute bg-black text-gray-800 shadow-md shadow-red-800 animate-bounce px-2 py-1 rounded-lg top-10 -left-10 border border-red-800 z-10">
+                                    <div class="flex gap-1 items-center">
+                                        <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                            id="mobile">
+                                            <path fill="#88a1ba"
+                                                d="M37 32H5c-1.1 0-2-.9-2-2V10c0-1.1.9-2 2-2h32c1.1 0 2 .9 2 2v20c0 1.1-.9 2-2 2z">
+                                            </path>
+                                            <path fill="#f7f7fb" d="M37 32H5c-1.1 0-2-.9-2-2v-4h36v4c0 1.1-.9 2-2 2z">
+                                            </path>
+                                            <path fill="#444a54"
+                                                d="M24 41h-6a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1zm-5-2h4v-6h-4v6z">
+                                            </path>
+                                            <path fill="#f7f7fb" d="M18 32h6v8h-6z"></path>
+                                            <circle cx="21" cy="29" r="1" fill="#444a54"></circle>
+                                            <path fill="#444a54"
+                                                d="M37 7H5c-1.654 0-3 1.346-3 3v20c0 1.654 1.346 3 3 3h12v6h-5.5a1 1 0 0 0 0 2h19a1 1 0 1 0 0-2H25v-6h12c1.654 0 3-1.346 3-3V10c0-1.654-1.346-3-3-3zM4 10c0-.551.449-1 1-1h32c.552 0 1 .449 1 1v15H4V10zm19 29h-4v-6h4v6zm15-9c0 .551-.448 1-1 1H5c-.551 0-1-.449-1-1v-3h34v3z">
+                                            </path>
+                                            <path fill="#f7f7fb"
+                                                d="M43 40h-8a2 2 0 0 1-2-2V20a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2z">
+                                            </path>
+                                            <path fill="#88a1ba" d="M33 22h12v14H33z"></path>
+                                            <path fill="#444a54"
+                                                d="M43 17h-8c-1.654 0-3 1.346-3 3v18c0 1.654 1.346 3 3 3h8c1.654 0 3-1.346 3-3V20c0-1.654-1.346-3-3-3zm-9 6h10v12H34V23zm0-3c0-.551.448-1 1-1h8c.552 0 1 .449 1 1v1H34v-1zm10 18c0 .551-.448 1-1 1h-8c-.552 0-1-.449-1-1v-1h10v1z">
+                                            </path>
+                                        </svg>
+                                        <h3 class="font-medium text-white text-[14px]">Full-Stack Developer</h3>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div
+                                    class="absolute bg-black text-white shadow-md shadow-red-800  animate-bounce px-2 py-1 rounded top-1/2 -right-14 border border-red-800 z-10 text-[14px]">
+                                    <div class="flex gap-1 items-center">
+                                        <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+
+                                            <!-- Paint Palette Base -->
+                                            <path fill="#f4c430"
+                                                d="M256 40C132 40 40 132 40 240c0 92 68 168 160 168h40c18 0 30-14 30-30 0-12-8-20-8-30 0-18 14-32 32-32h40c92 0 168-76 168-168C472 108 376 40 256 40z" />
+
+                                            <!-- Color Spots -->
+                                            <circle cx="180" cy="190" r="30" fill="#ff4d6d" />
+                                            <circle cx="260" cy="150" r="28" fill="#4cc9f0" />
+                                            <circle cx="340" cy="210" r="26" fill="#7209b7" />
+                                            <circle cx="230" cy="270" r="24" fill="#06d6a0" />
+
+                                            <!-- Brush Handle -->
+                                            <rect x="350" y="300" width="28" height="140" rx="14" fill="#8B5E3C" />
+
+                                            <!-- Brush Metal -->
+                                            <rect x="338" y="260" width="52" height="50" rx="10" fill="#c0c0c0" />
+
+                                            <!-- Brush Paint Tip -->
+                                            <path fill="#ff6b6b"
+                                                d="M364 230c22 0 38 20 38 40s-16 40-38 40-38-20-38-40 16-40 38-40z" />
+
+                                        </svg>
+
+                                        <h3 class="font-medium">UI/UX Design</h3>
+                                    </div>
+                                </div>
+
+                                <!-- 3 -->
+                                <div
+                                    class="absolute bg-black text-gray-800 bg-black text-white shadow-md shadow-red-800 animate-bounce px-2 py-1 rounded bottom-20 -left-14 border border-red-800 z-10">
+                                    <div class="flex gap-1 items-center">
+                                        <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                            id="setting-mobile">
+                                            <g>
+                                                <path fill="#9fdbf3" d="M11 7h26v34H11z"></path>
+                                                <path fill="#b2e5fb" d="M14 7v9a23 23 0 0 0 23 23c.1 0 0 1.2 0-32Z">
+                                                </path>
+                                                <path fill="#374f68" d="M37 3v4H11V3a2 2 0 0 1 2-2h22a2 2 0 0 1 2 2Z">
+                                                </path>
+                                                <path fill="#425b72" d="M37 3v2H18a4 4 0 0 1-4-4h21a2 2 0 0 1 2 2Z">
+                                                </path>
+                                                <path fill="#374f68" d="M37 41v4a2 2 0 0 1-2 2H13a2 2 0 0 1-2-2v-4Z">
+                                                </path>
+                                                <path fill="#425b72" d="M37 41v4H18a4 4 0 0 1-4-4Z"></path>
+                                                <path fill="#edebf2"
+                                                    d="M27 5h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm-2 40h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2zM17 5a1 1 0 0 1-.38-1.92A1 1 0 1 1 17 5z">
+                                                </path>
+                                                <path fill="#db5669"
+                                                    d="M33 25.5v-3l-2.31-.58a7.59 7.59 0 0 0-.49-1.17l1.22-2.05-2.12-2.12-2.05 1.22a7.59 7.59 0 0 0-1.17-.49L25.5 15h-3l-.58 2.31a7.59 7.59 0 0 0-1.17.49l-2.05-1.22-2.12 2.12 1.22 2.05a7.59 7.59 0 0 0-.49 1.17L15 22.5v3l2.31.58a7.59 7.59 0 0 0 .49 1.17l-1.22 2.05 2.12 2.12 2.05-1.22a7.59 7.59 0 0 0 1.17.49L22.5 33h3l.58-2.31a7.59 7.59 0 0 0 1.17-.49l2.05 1.22 2.12-2.12-1.22-2.05a7.59 7.59 0 0 0 .49-1.17ZM24 27a3 3 0 1 1 3-3 3 3 0 0 1-3 3Z">
+                                                </path>
+                                                <path fill="#f26674"
+                                                    d="M33 25.5v-3l-2.31-.58a7.59 7.59 0 0 0-.49-1.17l1.22-2.05-2.12-2.12-2.05 1.22a7.59 7.59 0 0 0-1.17-.49L25.5 15h-3l-.58 2.31c-1.64.52-.65.8-2.43-.26A9 9 0 0 0 26 30.94c.11-.47-.15 0 1.23-.74l2.05 1.22 2.12-2.12-1.2-2.05a7.59 7.59 0 0 0 .49-1.17ZM24 27a3 3 0 1 1 3-3 3 3 0 0 1-3 3Z">
+                                                </path>
+                                                <path
+                                                    d="M35 0H13a3 3 0 0 0-3 3v42a3 3 0 0 0 3 3h22a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3ZM12 8h24v32H12Zm0-5a1 1 0 0 1 1-1h22a1 1 0 0 1 1 1v3H12Zm24 42a1 1 0 0 1-1 1H13a1 1 0 0 1-1-1v-3h24Z">
+                                                </path>
+                                                <path
+                                                    d="M27 3h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2zm-4 42h2a1 1 0 0 0 0-2h-2a1 1 0 0 0 0 2zM17.92 3.62A1 1 0 1 0 17 5a1 1 0 0 0 .92-1.38zM24 20a4 4 0 1 0 4 4 4 4 0 0 0-4-4zm0 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2z">
+                                                </path>
+                                                <path
+                                                    d="M33.24 21.53c-2.08-.52-1.74-.35-1.91-.73 1-1.58 1.47-2.15.8-2.81-2.16-2.16-2.49-2.78-3.34-2.27-1.84 1.1-1.49 1-1.87.83-.45-1.78-.48-2.55-1.42-2.55-3.06 0-3.73-.2-4 .76-.52 2.08-.35 1.74-.73 1.91-1.58-1-2.15-1.47-2.81-.8-2.16 2.16-2.78 2.5-2.27 3.34 1.11 1.85 1 1.48.83 1.87-1.78.45-2.55.48-2.55 1.42 0 3.06-.2 3.73.76 4 2.08.52 1.74.35 1.91.73-1 1.58-1.47 2.15-.8 2.81 2.16 2.16 2.5 2.78 3.34 2.27 1.84-1.1 1.49-1 1.87-.83.45 1.78.48 2.55 1.42 2.55 3.05 0 3.73.2 4-.76.52-2.08.35-1.74.73-1.91 1.58 1 2.15 1.47 2.81.8 2.16-2.16 2.78-2.5 2.27-3.34-1.1-1.84-1-1.49-.83-1.87 1.78-.45 2.55-.48 2.55-1.42 0-3.06.2-3.76-.76-4ZM32 24.72c-1.67.42-2.07.41-2.27 1.06-.59 1.9-1 .93.44 3.37l-1 1c-1.49-.9-1.76-1.18-2.36-.86-1.76.92-1.39 0-2.07 2.69h-1.46c-.42-1.67-.41-2.07-1.06-2.27-1.9-.59-.92-1-3.37.44l-1-1c.9-1.49 1.18-1.76.86-2.36-.92-1.76 0-1.39-2.69-2.07v-1.44c1.64-.41 2.06-.4 2.27-1.06.59-1.9 1-.92-.44-3.37l1-1c1.48.89 1.76 1.18 2.36.86 1.76-.93 1.39 0 2.07-2.69h1.44c.42 1.67.41 2.07 1.06 2.27 1.9.59.92 1 3.37-.44l1 1c-.87 1.45-1.18 1.74-.86 2.36.92 1.76 0 1.39 2.69 2.07Z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <h3 class="font-medium text-white text-[14px]">Mobile App Developer</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- section 1  -->
+
+        <!-- section 2 About us -->
+        <section id="aboutss">
+            <div class=" w-[90%] md:w-[88%] mx-auto mt-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <!-- Text Content -->
+                    <div class="lg:col-span-6 aos-init aos-animate" data-aos="fade-down">
+                        <div>
+                            <h3
+                                class="uppercase text-[13px]  font-bold text-lg lg:text-start md:text-start  text-red-800  ">
+                                About Me</h3>
+
+                            <h1
+                                class="lg:text-[40px] lg:text-[35px] text-[30px] font-bold text-white  lg:text-start md:text-start ">
+                                Building Scalable and Modern <span
+                                    class="lg:text-[40px] lg:text-[35px] text-[30px] text-bold text-transparent   bg-clip-text bg-gradient-to-r from-red-800 via-red-500 to-red-300 ">Web
+                                    Applications</span>
+                            </h1>
+                            <p class="mt-6 text-gray-400 ">
+                                As a passionate Full Stack Developer, I specialize in building scalable,
+                                high-performance web applications that deliver seamless user experiences. From crafting
+                                responsive front-end interfaces to developing secure and efficient back-end systems, I
+                                focus on writing clean, maintainable code that transforms ideas into powerful digital
+                                solutions.
+
+
+                            </p>
+                            <p class="mt-6 text-gray-400 ">
+                                With a strong understanding of modern development practices and emerging technologies, I
+                                aim to create applications that are not only visually engaging but also optimized for
+                                speed, security, and scalability. My goal is to build solutions that solve real-world
+                                problems while maintaining long-term performance and growth.</p>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Image Content -->
+                    <div class="lg:col-span-6 flex justify-center" data-aos="de-up">
+
+                        <!-- Inner Grid (6 columns) -->
+                        <div class="grid grid-cols-6 gap-6 w-full">
+
+                            <!-- Box 1 -->
+                            <div data-aos="fade-right" class="col-span-6 md:col-span-3 p-6  rounded-2xl border border-gray-800/40 
+            hover:border-red-800 transition-all duration-300 group">
+
+                                <div class="relative z-10 grid h-10 w-10 place-items-center 
+                rounded-lg bg-[rgba(185,18,2,0.2)] 
+                text-red-800 
+                transition-all duration-300
+                group-hover:bg-red-800/30
+                group-hover:text-white">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-800" fill="none"
+                                        viewBox="0 0 24 24" stroke="red" stroke-width="2">
+                                        <path
+                                            d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5">
+                                        </path>
+                                        <path d="M9 18h6"></path>
+                                        <path d="M10 22h4"></path>
+                                    </svg>
+
+                                </div>
+
+                                <div class="mt-4 text-[17px] font-semibold">Creative Innovation</div>
+                                <div class="text-sm text-gray-400 mt-3">
+                                    Pushing boundaries with fresh ideas and cutting-edge solutions.
+                                </div>
+
+                            </div>
+
+
+                            <!-- Box 2 -->
+                            <div data-aos="fade-right" class="col-span-6 md:col-span-3 p-6  rounded-2xl border border-gray-800/40 
+            hover:border-red-800 transition-all duration-300 group">
+
+                                <div class="relative z-10 grid h-10 w-10 place-items-center 
+                rounded-lg bg-[rgba(185,18,2,0.2)] 
+                text-red-800 
+                transition-all duration-300
+                group-hover:bg-red-800/30
+                group-hover:text-white">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="red" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-target w-6 h-6 text-primary">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <circle cx="12" cy="12" r="6"></circle>
+                                        <circle cx="12" cy="12" r="2"></circle>
+                                    </svg>
+
+                                </div>
+
+                                <div class="mt-4 text-[17px] font-semibold">Result Driven</div>
+                                <div class="text-sm text-gray-400 mt-3">We focus on performance and long-term success.
+                                </div>
+
+                            </div>
+                            <div data-aos="fade-right" class="col-span-6 md:col-span-3 p-6  rounded-2xl border border-gray-800/40 
+            hover:border-red-800 transition-all duration-300 group">
+
+                                <div class="relative z-10 grid h-10 w-10 place-items-center 
+                rounded-lg bg-[rgba(185,18,2,0.2)] 
+                text-red-800 
+                transition-all duration-300
+                group-hover:bg-red-800/30
+                group-hover:text-white">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="red" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart w-6 h-6 text-primary">
+                                        <path
+                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                        </path>
+                                    </svg>
+                                </div>
+
+                                <div class="mt-4 text-[17px] font-semibold">Client-Centric</div>
+                                <div class="text-sm text-gray-400 mt-3">
+                                    Your success is our success. We're partners in your journey.
+                                </div>
+
+                            </div>
+
+                            <div data-aos="fade-right" class="col-span-6 md:col-span-3 p-6  rounded-2xl border border-gray-800/40 
+            hover:border-red-800 transition-all duration-300 group">
+
+                                <div class="relative z-10 grid h-10 w-10 place-items-center 
+                rounded-lg bg-[rgba(185,18,2,0.2)] 
+                text-red-800 
+                transition-all duration-300
+                group-hover:bg-red-800/30
+                group-hover:text-white">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="red" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-rocket w-6 h-6 text-primary">
+                                        <path
+                                            d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                                        </path>
+                                        <path
+                                            d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                                        </path>
+                                        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                                        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                                    </svg>
+
+                                </div>
+
+                                <div class="mt-4 text-[17px] font-semibold">Growth Focused</div>
+                                <div class="text-sm text-gray-400 mt-3">
+                                    Pushing boundaries with fresh ideas and cutting-edge solutions.
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- section 2  -->
+
+
+        <!-- section 2 Services -->
+        <section class="relative" id="serviceee">
+
+            <div class="absolute inset-0 flex  justify-start pointer-events-none">
+                <div class="w-[300px] h-[300px]
+               bg-gradient-to-r from-red-900 via-red-700 to-red-500
+               rounded-full blur-[200px] opacity-40">
+                </div>
+            </div>
+            <div class=" w-[90%] md:w-[88%] mx-auto lg:mt-40 md:mt-30 mt-10">
+
+
+                <div class=" relative text-center">
+                    <h3 class="uppercase text-[13px] font-bold text-lg text-red-800 " data-aos="fade-up">
+                        SERVICES</h3>
+
+                    <h1 class="lg:text-[40px] lg:text-[35px] text-[30px] font-bold text-white " data-aos="fade-up">
+                        Our Development <span
+                            class="lg:text-[40px] lg:text-[35px] text-[30px] text-bold text-transparent   bg-clip-text bg-gradient-to-r from-red-800 via-red-500 to-red-300 ">
+                            Services</span>
+                    </h1>
+                    <p class="text-[16px] text-gray-400 " data-aos="fade-up">Turning ideas into scalable web
+                        applications using modern technologies and clean code practices.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-10">
+
+
+                    <!-- Image Content -->
+                    <div class="lg:col-span-4 flex justify-center">
+
+                        <!-- Box 1 -->
+                        <div class="col-span-6 md:col-span-3 p-6  rounded-2xl border border-gray-800/40 
+            hover:border-red-800 transition-all duration-300 group">
+
+                            <div class="relative z-10 grid h-10 w-10 place-items-center 
+                rounded-lg bg-[rgba(185,18,2,0.2)] 
+                text-red-800 
+                transition-all duration-300
+                group-hover:bg-red-800/30
+                group-hover:text-white">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="red" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-globe w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                    <path d="M2 12h20"></path>
+                                </svg>
+
+                            </div>
+
+                            <div class="mt-4 text-[17px] font-semibold">Website Design & Development</div>
+                            <div class="text-sm text-gray-400 mt-3">
+                                Beautiful, responsive websites that convert visitors into customers. Fast, modern, and
+                                optimized for all devices.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="lg:col-span-4 flex justify-center">
+
+                        <!-- Box 1 -->
+                        <div class="col-span-6 md:col-span-3 p-6  rounded-2xl border border-gray-800/40 
+            hover:border-red-800 transition-all duration-300 group">
+
+                            <div class="relative z-10 grid h-10 w-10 place-items-center 
+                rounded-lg bg-[rgba(185,18,2,0.2)] 
+                text-red-800 
+                transition-all duration-300
+                group-hover:bg-red-800/30
+                group-hover:text-white">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="red" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-layers w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors">
+                                    <path
+                                        d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z">
+                                    </path>
+                                    <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path>
+                                    <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path>
+                                </svg>
+
+                            </div>
+
+                            <div class="mt-4 text-[17px] font-semibold">UI/UX Design</div>
+                            <div class="text-sm text-gray-400 mt-3">
+                                User-centered design that delights. We create intuitive interfaces and seamless
+                                experiences that keep users coming back.
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <div class="lg:col-span-4 flex justify-center">
+
+                        <!-- Box 1 -->
+                        <div class="col-span-6 md:col-span-3 p-6  rounded-2xl border border-gray-800/40 
+            hover:border-red-800 transition-all duration-300 group">
+
+                            <div class="relative z-10 grid h-10 w-10 place-items-center 
+                rounded-lg bg-[rgba(185,18,2,0.2)] 
+                text-red-800 
+                transition-all duration-300
+                group-hover:bg-red-800/30
+                group-hover:text-white">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="red"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="w-6 h-6 text-primary">
+
+                                    <!-- Mobile Body -->
+                                    <rect x="7" y="2" width="10" height="20" rx="2" ry="2"></rect>
+
+                                    <!-- Screen Line -->
+                                    <line x1="11" y1="18" x2="13" y2="18"></line>
+
+                                </svg>
+
+
+                            </div>
+
+                            <div class="mt-4 text-[17px] font-semibold">App Development</div>
+                            <div class="text-sm text-gray-400 mt-3">
+                                Designing and developing high-performance mobile applications that deliver seamless user
+                                experiences and real business value.
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="flex justify-center mt-10">
+                <a href="#contactt"
+                    class="bg-[#b91202] text-white px-6 py-3 rounded-md relative overflow-hidden group shadow-[0_0_25px_3px_rgba(153,27,27,0.45)] transition-all duration-300">
+                    <span
+                        class="absolute top-0 left-0 w-full h-full bg-white/20 transform -skew-x-2 -translate-x-full group-hover:translate-x-0 transition duration-500">
+                    </span>
+
+                    <span class="relative z-10 font-medium text-white">Get a Free Consultation</span>
+                </a>
+            </div>
+        </section>
+        <!-- section 2  -->
+
+        <!-- section 2 project -->
+        <section class="relative" id="portfolioo">
+
+            <div class="absolute inset-0 flex  justify-start pointer-events-none">
+
+            </div>
+            <div class=" w-[90%] md:w-[88%] mx-auto lg:mt-40 md:mt-30 mt-10">
+
+
+                <div class=" relative text-center">
+                    <h3 class="uppercase text-[13px] font-bold text-lg text-red-800 " data-aos="fade-up">
+                        OUR WORK</h3>
+
+                    <h1 class="lg:text-[40px] lg:text-[35px] text-[30px] font-bold text-white " data-aos="fade-up">
+                        Featured <span
+                            class="lg:text-[40px] lg:text-[35px] text-[30px] text-bold text-transparent   bg-clip-text bg-gradient-to-r from-red-800 via-red-500 to-red-300 ">
+                            Project</span>
+                    </h1>
+                    <p class="text-[16px] text-gray-400 " data-aos="fade-up"> A selection of my recent work showcasing
+                        design, performance, and functionality.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-10">
+
+
+                    <!-- Image Content -->
+                    <div class="lg:col-span-4 mt-5 flex justify-center h-full">
+
+                        <div class="flex justify-center items-center w-full">
+                            <div class="max-w-[720px] mx-auto w-full">
+
+                                <div
+                                    class="relative flex border border-gray-800/40 hover:border-red-800 duration-300 w-full max-w-[26rem] flex-col rounded-xl bg-black bg-clip-border text-gray-700 shadow-lg h-full">
+
+                                    <!-- Image -->
+                                    <div
+                                        class="relative mx-4 mt-4 h-56 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+
+                                        <img src="assets/images/Gemini_Generated_Image_m27ymqm27ymqm27y.png"
+                                            class="w-full h-full object-cover" alt="ui/ux review check" />
+
+                                        <div
+                                            class="absolute inset-0 w-full h-full bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="p-6 flex flex-col flex-grow">
+                                        <div class="inline-flex flex-wrap items-center gap-3 mb-4 group">
+
+                                            <div class="relative z-10 grid h-10 w-10 place-items-center 
+                        rounded-lg bg-[rgba(185,18,2,0.2)] text-red-800 
+                        transition-all duration-300
+                        group-hover:bg-red-800/30 group-hover:text-white">
+                                                <i class="fab fa-html5 text-2xl" style="color: red;"></i>
+                                            </div>
+
+                                            <div class="relative z-10 grid h-10 w-10 place-items-center 
+                        rounded-lg bg-[rgba(185,18,2,0.2)] text-red-800 
+                        transition-all duration-300
+                        group-hover:bg-red-800/30 group-hover:text-white">
+                                                <i class="fab fa-css3-alt text-2xl" style="color: red;"></i>
+                                            </div>
+
+                                            <div class="relative z-10 grid h-10 w-10 place-items-center 
+                        rounded-lg bg-[rgba(185,18,2,0.2)] text-red-800 
+                        transition-all duration-300
+                        group-hover:bg-red-800/30 group-hover:text-white">
+                                                <i class="fa-brands fa-js text-2xl" style="color: red;"></i>
+                                            </div>
+
+                                            <div class="relative z-10 grid h-10 w-10 place-items-center 
+                        rounded-lg bg-[rgba(185,18,2,0.2)] text-red-800 
+                        transition-all duration-300
+                        group-hover:bg-red-800/30 group-hover:text-white">
+                                                <i class="fa-brands fa-php text-2xl" style="color: red;"></i>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="flex items-center justify-between mb-3">
+                                            <h5 class="block text-xl font-medium text-white">
+                                                Ecommerce Website
+                                            </h5>
+                                        </div>
+
+                                        <p class="mt-2 text-gray-400 text-[14px] flex-grow">
+                                            Developed a fully functional eCommerce website using HTML, CSS, JavaScript,
+                                            and PHP with dynamic cart and backend integration.
+                                        </p>
+
+                                        <a href="https://asfahan09.github.io/Amazon_clone/" target="_blank" class="text-center relative bg-[#161616] mt-5 w-full text-white px-6 py-2 rounded-md
+                        hover:shadow-[0_0_25px_0px_rgba(153,27,27,0.45)]
+                        border border-transparent
+                        transition-all duration-300
+                        hover:border-red-800">
+                                            View
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 mt-5  flex justify-center h-full">
+
+                        <div class="flex justify-center items-center w-full">
+                            <div class="max-w-[720px] mx-auto w-full">
+
+                                <div
+                                    class="relative flex border border-gray-800/40 hover:border-red-800 duration-300 w-full max-w-[26rem] flex-col rounded-xl bg-black bg-clip-border text-gray-700 shadow-lg h-full">
+
+                                    <!-- Image -->
+                                    <div
+                                        class="relative mx-4 mt-4 h-56 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+
+                                        <img src="assets/images/Gemini_Generated_Image_5364uq5364uq5364.png"
+                                            class="w-full h-full object-cover" alt="ui/ux review check" />
+
+                                        <div
+                                            class="absolute inset-0 w-full h-full bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="p-6 flex flex-col flex-grow">
+                                        <div class="inline-flex flex-wrap items-center gap-3 mb-4 group">
+
+                                            <div class="relative z-10 grid h-10 w-10 place-items-center 
+                        rounded-lg bg-[rgba(185,18,2,0.2)] text-red-800 
+                        transition-all duration-300
+                        group-hover:bg-red-800/30 group-hover:text-white">
+                                                <i class="fab fa-html5 text-2xl" style="color: red;"></i>
+                                            </div>
+
+                                            <div class="relative z-10 grid h-10 w-10 place-items-center 
+                        rounded-lg bg-[rgba(185,18,2,0.2)] text-red-800 
+                        transition-all duration-300
+                        group-hover:bg-red-800/30 group-hover:text-white">
+                                                <i class="fab fa-css3-alt text-2xl" style="color: red;"></i>
+                                            </div>
+
+                                            <div class="relative z-10 grid h-10 w-10 place-items-center 
+                        rounded-lg bg-[rgba(185,18,2,0.2)] text-red-800 
+                        transition-all duration-300
+                        group-hover:bg-red-800/30 group-hover:text-white">
+                                                <i class="fa-brands fa-js text-2xl" style="color: red;"></i>
+                                            </div>
+
+                                            <div class="relative z-10 grid h-10 w-10 place-items-center 
+                        rounded-lg bg-[rgba(185,18,2,0.2)] text-red-800 
+                        transition-all duration-300
+                        group-hover:bg-red-800/30 group-hover:text-white">
+                                                <i class="fa-brands fa-bootstrap text-2xl" style="color: red;"></i>
+                                            </div>
+
+
+
+                                        </div>
+
+                                        <div class="flex items-center justify-between mb-3">
+                                            <h5 class="block text-xl font-medium text-white">
+                                                Ecommerce Website Design
+                                            </h5>
+                                        </div>
+
+                                        <p class="mt-2 text-gray-400 text-[14px] flex-grow">
+                                            Designed and developed a responsive eCommerce website using HTML, CSS,
+                                            JavaScript, and jQuery with interactive UI and dynamic functionality.
+                                        </p>
+
+                                        <a href="https://asfahan09.github.io/liberty_electronic/" target="_blank" class="relative text-center bg-[#161616] mt-5 w-full text-white px-6 py-2 rounded-md
+                        hover:shadow-[0_0_25px_0px_rgba(153,27,27,0.45)]
+                        border border-transparent
+                        transition-all duration-300
+                        hover:border-red-800">
+                                            View
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 mt-5 flex justify-center h-full">
+
+                        <div class="flex justify-center items-center w-full">
+                            <div class="max-w-[720px] mx-auto w-full">
+
+                                <div
+                                    class="relative flex border border-gray-800/40 hover:border-red-800 duration-300 w-full max-w-[26rem] flex-col rounded-xl bg-black bg-clip-border text-gray-700 shadow-lg h-full">
+
+                                    <!-- Image -->
+                                    <div
+                                        class="relative mx-4 mt-4 h-56 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+
+                                        <img src="assets\images\project3.PNG" class="w-full h-full object-cover"
+                                            alt="ui/ux review check" />
+
+                                        <div
+                                            class="absolute inset-0 w-full h-full bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="p-6 flex flex-col flex-grow">
+                                        <div class="inline-flex flex-wrap items-center gap-3 mb-4 group">
+
+                                            <div class="relative z-10 grid h-10 w-10 place-items-center 
+                        rounded-lg bg-[rgba(185,18,2,0.2)] text-red-800 
+                        transition-all duration-300
+                        group-hover:bg-red-800/30 group-hover:text-white">
+                                                <i class="fab fa-html5 text-2xl" style="color: red;"></i>
+                                            </div>
+
+                                            <div class="relative z-10 grid h-10 w-10 place-items-center 
+                        rounded-lg bg-[rgba(185,18,2,0.2)] text-red-800 
+                        transition-all duration-300
+                        group-hover:bg-red-800/30 group-hover:text-white">
+                                                <i class="fab fa-css3-alt text-2xl" style="color: red;"></i>
+                                            </div>
+
+
+
+
+
+                                        </div>
+
+                                        <div class="flex items-center justify-between mb-3">
+                                            <h5 class="block text-xl font-medium text-white">
+                                                Amazon Clone
+                                            </h5>
+                                        </div>
+
+                                        <p class="mt-2 text-gray-400 text-[14px] flex-grow">
+                                            Developed an Amazon clone using HTML, CSS, , replicating core eCommerce
+                                            features with responsive design and interactive UI.
+                                        </p>
+
+                                        <a href="https://asfahan09.github.io/Amazon_clone/" target="_blank" class="relative text-center bg-[#161616] mt-5 w-full text-white px-6 py-2 rounded-md
+                        hover:shadow-[0_0_25px_0px_rgba(153,27,27,0.45)]
+                        border border-transparent
+                        transition-all duration-300
+                        hover:border-red-800">
+                                            View
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- section 2  -->
+
+
+        <!-- section Testmonial  -->
+        <section class="relative" id="testimoniall">
+
+            <div class="absolute inset-0 flex  justify-end pointer-events-none">
+                <div class="w-[300px] h-[300px]
+               bg-gradient-to-r from-red-900 via-red-700 to-red-500
+               rounded-full blur-[200px] opacity-40">
+                </div>
+            </div>
+
+            <div class=" w-[90%] md:w-[88%] mx-auto lg:mt-40 md:mt-30 mt-10">
+
+
+                <div class=" relative text-center">
+                    <h3 class="uppercase text-[13px] font-bold text-lg text-red-800 " data-aos="fade-up">
+                        TESTIMONIALS</h3>
+
+                    <h1 class="lg:text-[40px] lg:text-[35px] text-[30px] font-bold text-white " data-aos="fade-up">
+                        What Client <span
+                            class="lg:text-[40px] lg:text-[35px] text-[30px] text-bold text-transparent   bg-clip-text bg-gradient-to-r from-red-800 via-red-500 to-red-300 ">
+                            Say</span>
+                    </h1>
+                    <p class="text-[16px] text-gray-400 " data-aos="fade-up">Don't just take our word for it. Here's
+                        what our clients have to say about working with Visual Minds.</p>
+                </div>
+
+
+
+
+                <div class="splide abouttest mt-10">
+                    <div class="splide__track">
+                        <ul class="splide__list ">
+                            <li class="splide__slide text-white">
+
+                                <div
+                                    class="bg-black border-gray-800/40 border p-10 group transition-transform duration-350  dark:bg-accent-700 sm:p-[50px]">
+
+                                    <div class="flex flex-col gap-12 md:flex-row md:gap-5  group">
+                                        <div class="relative max-w-max flex-none">
+
+                                            <span
+                                                class="absolute left-1/2 grid h-[35px] w-[35px] -translate-x-1/2 -translate-y-1/2 place-items-center  rounded-full border-2 border-red-800 bg-[#b91202] text-lg/[1] text-white"><svg
+                                                    stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 448 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z">
+                                                    </path>
+                                                </svg></span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h3
+                                                class="text-md font-bold leading-[1.25] text-accent-900 dark:text-white md:text-lg">
+                                                Jhon Cooper</h3>
+                                            <p class="mt-1">Team Leader</p>
+                                            <div class="mt-2 min-h-[30px] text-red-800">
+                                                <div class="flex gap-1">
+                                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                                                </div>
+                                            </div>
+                                            <p class="mt-5">Delivered a fully functional eCommerce platform with
+                                                seamless UI and robust backend — exceeded expectations</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+
+                                <div
+                                    class="bg-black border-gray-800/40 border p-10 group transition-transform duration-350  dark:bg-accent-700 sm:p-[50px]">
+
+                                    <div class="flex flex-col gap-12 md:flex-row md:gap-5  group">
+                                        <div class="relative max-w-max flex-none">
+
+                                            <span
+                                                class="absolute left-1/2 grid h-[35px] w-[35px] -translate-x-1/2 -translate-y-1/2 place-items-center  rounded-full border-2 border-red-800 bg-[#b91202] text-lg/[1] text-white"><svg
+                                                    stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 448 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z">
+                                                    </path>
+                                                </svg></span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h3
+                                                class="text-md font-bold leading-[1.25] text-accent-900 dark:text-white md:text-lg">
+                                                Abeera Khan</h3>
+                                            <p class="mt-1">Technical Lead</p>
+                                            <div class="mt-2 min-h-[30px] text-red-800">
+                                                <div class="flex gap-1">
+                                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                                                </div>
+                                            </div>
+                                            <p class="mt-5">A true professional — transformed our ideas into a modern,
+                                                user-friendly website with clean code and smooth performance.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+
+                                <div
+                                    class="bg-black border-gray-800/40 border p-10 group transition-transform duration-350  dark:bg-accent-700 sm:p-[50px]">
+
+                                    <div class="flex flex-col gap-12 md:flex-row md:gap-5  group">
+                                        <div class="relative max-w-max flex-none">
+
+                                            <span
+                                                class="absolute left-1/2 grid h-[35px] w-[35px] -translate-x-1/2 -translate-y-1/2 place-items-center  rounded-full border-2 border-red-800 bg-[#b91202] text-lg/[1] text-white"><svg
+                                                    stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 448 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z">
+                                                    </path>
+                                                </svg></span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h3
+                                                class="text-md font-bold leading-[1.25] text-accent-900 dark:text-white md:text-lg">
+                                                Sarah Johnson</h3>
+                                            <p class="mt-1">Team Leader</p>
+                                            <div class="mt-2 min-h-[30px] text-red-800">
+                                                <div class="flex gap-1">
+                                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                                                </div>
+                                            </div>
+                                            <p class="mt-5">Delivered high-quality work with strong communication and
+                                                excellent technical skills. We’ll definitely work with them again</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="splide__arrows splide__arrows--ltr">
+                        <button class="splide__arrow splide__arrow--prev   " type="button" aria-label="Previous slide"
+                            aria-controls="splide02-track">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40"
+                                focusable="false">
+                                <path fill="red"
+                                    d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z">
+                                </path>
+                            </svg>
+                        </button>
+
+
+                        <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
+                            aria-controls="splide02-track">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40"
+                                focusable="false">
+                                <path fill="red"
+                                    d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z">
+                                </path>
+                            </svg>
+                        </button>
+
+                    </div>
+                    <!-- Add the progress bar element -->
+                    <div class="flex justify-center mt-20">
+                        <div class="my-carousel-progress">
+                            <div class="my-carousel-progress-bar">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            </div>
+
+        </section>
+        <!-- section Testmonial  -->
+
+        <!-- section 2 contact  -->
+        <section id="contactt" class="relative">
+
+            <div  class="absolute inset-0 flex  justify-center items-start pointer-events-none">
+                <div class="w-[300px] h-[200px]
+               bg-gradient-to-r from-red-900 via-red-700 to-red-500
+               rounded-full blur-[200px] opacity-40">
+                </div>
+            </div>
+            <div class=" w-[90%] md:w-[88%] mx-auto lg:mt-40 md:mt-30 mt-10">
+
+
+                <div class=" relative text-center">
+                    <h3 class="uppercase text-[13px] font-bold text-lg text-red-800 " data-aos="fade-up">
+                        GET IN TOUCH</h3>
+
+                    <h1 class="lg:text-[40px] lg:text-[35px] text-[30px] font-bold text-white " data-aos="fade-up">
+                        Let's Build Something <span
+                            class="lg:text-[40px] lg:text-[35px] text-[30px] text-bold text-transparent   bg-clip-text bg-gradient-to-r from-red-800 via-red-500 to-red-300 ">
+                            Amazing</span>
+                    </h1>
+                    <p class="text-[16px] text-gray-400  " data-aos="fade-up">Ready to transform your brand? Let's
+                        discuss your project and see how Visual Minds can help you achieve your goals.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-20">
+
+
+                    <!-- text Content -->
+                    <div class="lg:col-span-6 ">
+
+                        <h2 class="text-[25px] font-bold">Book a Free Consultation</h2>
+                        <p class="text-gray-400 my-3">Whether you're starting from scratch or looking to revamp your
+                            existing brand, I'm here to help. Let's chat about your vision and create something
+                            extraordinary together.</p>
+                        <div class="flex  mt-8 gap-4">
+                            <div class="relative z-15 grid h-13 flex w-13 place-items-center 
+                        rounded-lg bg-[rgba(185,18,2,0.2)] text-red-800 
+                        transition-all duration-300
+                        group-hover:bg-red-800/30 group-hover:text-white">
+                                <i class="fa-solid fa-envelope text-2xl" style="color: red;"></i>
+                            </div>
+                            <div>
+                                <small class="text-[12px]">Email</small>
+                                <p class="text-[14px] text-gray-400">Muhammadasfahan689@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex  mt-8 gap-4">
+                            <div class="relative z-15 grid h-13 flex w-13 place-items-center 
+                        rounded-lg bg-[rgba(185,18,2,0.2)] text-red-800 
+                        transition-all duration-300
+                        group-hover:bg-red-800/30 group-hover:text-white">
+                                <i class="fa-solid fa-phone text-2xl" style="color: red;"></i>
+                            </div>
+                            <div>
+                                <small class="text-[12px]">Phone</small>
+                                <p class="text-[14px] text-gray-400">03418312249</p>
+                            </div>
+                        </div>
+
+                        <div class="flex  mt-8 gap-4">
+                            <div class="relative z-15 grid h-13 flex w-13 place-items-center 
+                        rounded-lg bg-[rgba(185,18,2,0.2)] text-red-800 
+                        transition-all duration-300
+                        group-hover:bg-red-800/30 group-hover:text-white">
+                                <i class="fa-solid fa-location-dot text-2xl" style="color: red;"></i>
+                            </div>
+                            <div>
+                                <small class="text-[12px]">Location</small>
+                                <p class="text-[14px] text-gray-400">Karachi/Pakistan</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="lg:col-span-6 ">
+
+                        <div class="bg-black border border-gray-800/40 shadow-lg rounded-2xl">
+                            <div class=" p-6 rounded-2xl>
+            
+
+              <form action="">
+                                <div class=" mt-10">
+                                <input type="text" id="full_name" class="w-full border-b-2 border border-gray-800/40 rounded-2xl  bg-transparent
+         text-white
+         placeholder:text-gray-300 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 " placeholder="Name"
+                                    required="">
+
+                                <div class="grid lg:grid-cols-2 md:grid-col-2 grid-cols-1 mt-10 gap-7">
+                                    <input type="email" id="email" placeholder="Email" required="" class="w-full border-b-2  bg-transparent border border-gray-800/40 rounded-2xl
+         text-white
+         placeholder:text-gray-300 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 ">
+                                    <input type="text" id="phone" placeholder="Phone" required="" class="w-full border-b-2  bg-transparent border border-gray-800/40 rounded-2xl
+         text-white
+         placeholder:text-gray-300 placeholder:text-[18px] py-4 focus:outline-none focus:ring-0 ">
+                                </div>
+
+                                <div class="mt-6">
+                                    <textarea id="message" placeholder="Write your message here…" required="" class="w-full border-b-2  bg-transparent border border-gray-800/40 rounded-2xl
+         text-white
+         placeholder:text-gray-300 placeholder:text-[18px] py-4 h-50 focus:outline-none focus:ring-0 "></textarea>
+                                </div>
+
+                                <div class="mt-4">
+                                    <input type="button" value="Send Message" onclick="sendbtn()"
+                                        class="bg-[#b91202] text-white px-6 py-3 rounded-md relative overflow-hidden group shadow-[0_0_25px_3px_rgba(153,27,27,0.45)] transition-all duration-300 w-full">
+                                </div>
+
+
+                            </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+              
+            </div>
+
+            </div>
+
+        </section>
+        <!-- section 2 contact page -->
+
+        <footer class="bg-black border-t border-gray-800/40 mt-20">
+            <div class="mx-auto max-w-7xl px-4 py-8">
+
+                <!-- Top Row -->
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+
+                    <!-- Logo -->
+                    <a href="#" class="text-2xl font-medium text-gray-700">
+                        <i
+                            class="fa-solid fa-code  text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700"></i>
+                        <span class="px-1 text-white">Asfahan</span>
+
+                    </a>
+                    <ul
+                        class="hidden text-lg md:flex justify-end gap-8 py-2 cursor-pointer md:px-10    text-[16px] text-gray-400">
+                        <li class="rounded-b  " id="about">About</li>
+                        <li class="rounded-b hover:text-white duration-300 " id="service">Service</li>
+                        <li class="rounded-b hover:text-white duration-300 " id="portfolio">Portfolio</li>
+                        <li class="rounded-b hover:text-white duration-300 " id="testimonial">Testimonial</li>
+                        <li class="rounded-b hover:text-white duration-300 " id="contact">Contact</li>
+                    </ul>
+                    <!-- Social Icons -->
+                    <ul class="flex gap-4">
+
+                        <!-- Facebook -->
+                        <li>
+                            <a href="#" class="group flex h-11 w-11 items-center justify-center rounded-full
+                   border border-gray-800/40 
+                   transition-all duration-300
+                   hover:bg-black  hover:border-red-800 ">
+                                <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <!-- LinkedIn -->
+                        <li>
+                            <a href="https://www.linkedin.com/in/muhammad-asfahan-3041172a2/" target="_blank" class="group flex h-11 w-11 items-center justify-center rounded-full
+                   border border-gray-800/40 
+                   transition-all duration-300
+                   hover:bg-black  hover:border-red-800 ">
+                                <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zM7.09 20.452h-3.181v-11.36h3.181v11.36zM5.5 7.433c-1.018 0-1.843-.827-1.843-1.844 0-1.018.825-1.844 1.843-1.844s1.844.826 1.844 1.844c0 1.017-.826 1.844-1.844 1.844zM20.452 20.452h-3.181v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667h-3.181v-11.36h3.053v1.551h.043c.425-.806 1.464-1.656 3.012-1.656 3.22 0 3.817 2.12 3.817 4.873v6.592z" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <!-- GitHub -->
+                        <li>
+                            <a href="https://github.com/asfahan09" target="_blank" class="group flex h-11 w-11 items-center justify-center rounded-full
+                   border border-gray-800/40 
+                   transition-all duration-300
+                   hover:bg-black  hover:border-red-800 ">
+                                <svg class="h-5 w-5 text-white " fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Bottom -->
+                <p class="mt-6 text-center text-xs text-gray-400">
+                    © 2025 Muhammad Asfahan. All rights reserved.
+                </p>
+
+            </div>
+        </footer>
+
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function () {
+                if (typeof Splide !== 'undefined') {
+                    new Splide('.slide-new', {
+                        type: 'loop',
+                        perPage: 3,
+                        arrows: false,
+                        pagination: false,
+                        arrows: true,
+                        gap: 17,
+                        breakpoints: {
+                            1280: { perPage: 2 },
+                            768: { perPage: 1, gap: '1rem', height: 'auto' },
+                        },
+                    }).mount();
+                } else {
+                    console.error('Splide not loaded.');
+                }
+            });
+
+
+
+
+            document.addEventListener('DOMContentLoaded', function () {
+                // Check if Splide is available
+                if (typeof Splide !== 'undefined') {
+                    new Splide('.splide-first', {
+                        type: 'loop',
+                        perPage: 5,
+                        autoplay: true,
+                        arrows: false,
+                        pagination: false,
+
+                        gap: 10.,
+                        breakpoints: {
+                            1360: { perPage: 4 },
+                            1090: { perPage: 3 },
+                            838: { perPage: 2 },
+                            700: { perPage: 1 },
+                        },
+                    }).mount();
+                } else {
+                    console.error('Splide is not loaded');
+                }
+            });
+
+
+
+
+
+
+
+
+
+            document.addEventListener('DOMContentLoaded', function () {
+                // Check if Splide is available
+                if (typeof Splide !== 'undefined') {
+                    var splide = new Splide('.abouttest', {
+                        type: 'slide',
+
+                        perPage: 2,       // Default: show 2 cards
+                        perMove: 1,       // Move 1 slide at a time
+                        gap: '1rem',      // Optional: gap between slides
+                        pagination: false,
+                        arrows: true,
+
+                        // Responsive breakpoints
+                        breakpoints: {
+                            1024: {
+                                perPage: 1,   // Tablets
+                            },
+                            768: {
+                                perPage: 1,   // Mobile
+                            },
+                        },
+                    });
+
+                    // Progress bar reference
+                    var bar = splide.root.querySelector('.my-carousel-progress-bar');
+
+                    // Update bar on mount & move
+                    splide.on('mounted move', function () {
+                        // Total number of pages (not slides)
+                        var totalPages = splide.Components.Controller.getEnd() + 1;
+
+                        // Current page index (starts from 0)
+                        var currentPage = splide.index;
+
+                        // Progress ratio
+                        var rate = Math.min((currentPage + 1) / totalPages, 1);
+
+                        // Set bar width
+                        bar.style.width = (rate * 100) + '%';
+                    });
+
+
+                    splide.mount();
+                } else {
+                    console.error('Splide is not loaded');
+                }
+            });
+
+
+            const repeat = document.getElementById('repeat');
+            const marquee = document.getElementById('myMarquee');
+
+            const content = repeat.outerHTML;
+
+            for (let i = 0; i < 30; i++) {
+                marquee.insertAdjacentHTML('beforeend', content);
+            }
+
+
+
+            const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 600) {
+                    scrollTopBtn.classList.remove("hidden");
+                } else {
+                    scrollTopBtn.classList.add("hidden");
+                }
+            });
+
+
+        </script>
+
+
+        <script>
+            //   ==================NAV BAR=====================
+
+            const nav = document.getElementById('mobile-nav');
+            const openNavBtn = document.getElementById('nav__toggle-open');
+            const closeNavBtn = document.getElementById('nav__toggle-close');
+
+            openNavBtn.addEventListener('click', () => {
+                nav.classList.remove('hidden');
+                openNavBtn.classList.add('hidden');
+                closeNavBtn.classList.remove('hidden');
+            });
+
+            closeNavBtn.addEventListener('click', () => {
+                nav.classList.add('hidden');
+                openNavBtn.classList.remove('hidden');
+                closeNavBtn.classList.add('hidden');
+            });
+        </script>
+
+    </main>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/flowbite@1.6.6/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+
+
+</body>
+
+</html>
